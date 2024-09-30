@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: udemy-python-design-pattern
+    build: .
+    tty: true
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app:/app
